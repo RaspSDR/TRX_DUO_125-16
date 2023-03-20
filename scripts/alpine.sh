@@ -64,7 +64,7 @@ projects="common_tools led_blinker mcpha playground pulsed_nmr sdr_receiver sdr_
 
 projects_122_88="led_blinker_122_88 pulsed_nmr_122_88 sdr_receiver_122_88 sdr_receiver_hpsdr_122_88 sdr_receiver_wide_122_88 sdr_transceiver_122_88 sdr_transceiver_ft8_122_88 sdr_transceiver_hpsdr_122_88 sdr_transceiver_wspr_122_88 vna_122_88"
 
-for p in $projects $projects_122_88
+for p in $projects
 do
   mkdir -p $root_dir/media/mmcblk0p1/apps/$p
   cp -r projects/$p/server/* $root_dir/media/mmcblk0p1/apps/$p/
@@ -165,7 +165,7 @@ tar -zxf \$wsprd_tar --strip-components=1 --directory=\$wsprd_dir
 rm \$wsprd_tar
 make -C \$wsprd_dir
 
-for p in server $projects $projects_122_88
+for p in server $projects
 do
   make -C /media/mmcblk0p1/apps/\$p clean
   make -C /media/mmcblk0p1/apps/\$p
