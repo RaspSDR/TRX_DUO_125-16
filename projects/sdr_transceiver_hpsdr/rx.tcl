@@ -129,7 +129,7 @@ for {set i 0} {$i <= 1} {incr i} {
 
   # Create port_slicer
   cell pavel-demin:user:port_slicer adc_slice_[expr $i + 8] {
-    DIN_WIDTH 16 DIN_FROM 13 DIN_TO 0
+    DIN_WIDTH 16 DIN_FROM 15 DIN_TO 0
   }
 
 }
@@ -142,7 +142,7 @@ for {set i 0} {$i <= 9} {incr i} {
   # Create dsp48
   cell pavel-demin:user:dsp48 mult_$i {
     A_WIDTH 24
-    B_WIDTH 14
+    B_WIDTH 16
     P_WIDTH 24
   } {
     A dds_slice_$i/dout

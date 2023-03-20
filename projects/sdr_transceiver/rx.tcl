@@ -48,7 +48,7 @@ cell pavel-demin:user:axis_lfsr lfsr_0 {} {
 cell xilinx.com:ip:cmpy mult_0 {
   APORTWIDTH.VALUE_SRC USER
   BPORTWIDTH.VALUE_SRC USER
-  APORTWIDTH 14
+  APORTWIDTH 16
   BPORTWIDTH 24
   ROUNDMODE Random_Rounding
   OUTPUTWIDTH 26

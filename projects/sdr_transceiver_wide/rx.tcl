@@ -50,12 +50,12 @@ cell xilinx.com:ip:dds_compiler dds_0 {
 
 # Create port_slicer
 cell pavel-demin:user:port_slicer adc_slice_0 {
-  DIN_WIDTH 32 DIN_FROM 13 DIN_TO 0
+  DIN_WIDTH 32 DIN_FROM 15 DIN_TO 0
 }
 
 # Create port_slicer
 cell pavel-demin:user:port_slicer adc_slice_1 {
-  DIN_WIDTH 32 DIN_FROM 29 DIN_TO 16
+  DIN_WIDTH 32 DIN_FROM 31 DIN_TO 16
 }
 
 # Create axis_zeroer
@@ -97,7 +97,7 @@ cell pavel-demin:user:axis_lfsr lfsr_0 {} {
 cell xilinx.com:ip:cmpy mult_0 {
   APORTWIDTH.VALUE_SRC USER
   BPORTWIDTH.VALUE_SRC USER
-  APORTWIDTH 14
+  APORTWIDTH 16
   BPORTWIDTH 24
   ROUNDMODE Random_Rounding
   OUTPUTWIDTH 26

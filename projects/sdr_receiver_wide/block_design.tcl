@@ -49,7 +49,7 @@ cell xilinx.com:ip:proc_sys_reset rst_0 {} {
 
 # Create axis_red_pitaya_adc
 cell pavel-demin:user:axis_red_pitaya_adc adc_0 {
-  ADC_DATA_WIDTH 14
+  ADC_DATA_WIDTH 16
 } {
   aclk pll_0/clk_out1
   adc_dat_a adc_dat_a_i
@@ -173,7 +173,7 @@ for {set i 0} {$i <= 3} {incr i} {
   # Create dsp48
   cell pavel-demin:user:dsp48 mult_$i {
     A_WIDTH 24
-    B_WIDTH 14
+    B_WIDTH 16
     P_WIDTH 24
   } {
     A dds_slice_$i/dout

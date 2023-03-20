@@ -49,7 +49,7 @@ cell xilinx.com:ip:proc_sys_reset rst_0 {} {
 
 # Create axis_red_pitaya_adc
 cell pavel-demin:user:axis_red_pitaya_adc adc_0 {
-  ADC_DATA_WIDTH 14
+  ADC_DATA_WIDTH 16
 } {
   aclk pll_0/clk_out1
   adc_dat_a adc_dat_a_i
@@ -264,7 +264,7 @@ for {set i 0} {$i <= 3} {incr i} {
     FIXED_OR_INITIAL_RATE 4
     INPUT_SAMPLE_FREQUENCY 125
     CLOCK_FREQUENCY 125
-    INPUT_DATA_WIDTH 14
+    INPUT_DATA_WIDTH 16
     QUANTIZATION Truncation
     OUTPUT_DATA_WIDTH 16
     USE_XTREME_DSP_SLICE false
